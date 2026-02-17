@@ -2,6 +2,7 @@
 
 A FastAPI-based REST API for managing candidate resumes with CRUD operations and filtering capabilities.
 
+
 ## Installation
 
 1. Clone the repository
@@ -55,13 +56,6 @@ Upload a new candidate with resume file.
 - `skills` (string): Comma-separated skills
 - `resume` (file): Resume file (PDF, DOC, or DOCX)
 
-**Response:**
-```json
-{
-  "message": "Candidate uploaded successfully",
-  "candidate_id": "uuid"
-}
-```
 
 ### List Candidates
 ```
@@ -74,23 +68,6 @@ Retrieve all candidates with optional filters.
 - `min_experience` (optional): Minimum years of experience
 - `graduation_year` (optional): Filter by graduation year
 
-**Response:**
-```json
-[
-  {
-    "id": "uuid",
-    "full_name": "John Doe",
-    "dob": "1990-01-01",
-    "contact_number": "+1234567890",
-    "contact_address": "123 Main St",
-    "education": "Bachelor's in Computer Science",
-    "graduation_year": 2012,
-    "years_experience": 5,
-    "skills": ["Python", "FastAPI", "Docker"],
-    "resume_filename": "john_doe_resume.pdf"
-  }
-]
-```
 
 ### Get Candidate by ID
 ```
@@ -98,21 +75,6 @@ GET /candidates/{candidate_id}
 ```
 Retrieve a specific candidate's details.
 
-**Response:**
-```json
-{
-  "id": "uuid",
-  "full_name": "John Doe",
-  "dob": "1990-01-01",
-  "contact_number": "+1234567890",
-  "contact_address": "123 Main St",
-  "education": "Bachelor's in Computer Science",
-  "graduation_year": 2012,
-  "years_experience": 5,
-  "skills": ["Python", "FastAPI", "Docker"],
-  "resume_filename": "john_doe_resume.pdf"
-}
-```
 
 ### Delete Candidate
 ```
@@ -120,12 +82,6 @@ DELETE /candidates/{candidate_id}
 ```
 Delete a candidate record.
 
-**Response:**
-```json
-{
-  "message": "Candidate deleted successfully"
-}
-```
 
 ## Project Structure
 
