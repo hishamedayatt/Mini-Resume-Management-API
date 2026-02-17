@@ -10,7 +10,7 @@ router = APIRouter(prefix="/candidates", tags=["Candidates"])
 
 
 # Upload Candidate
-@router.post("/", status_code=status.HTTP_201_CREATED)
+@router.post("", status_code=status.HTTP_201_CREATED)
 async def upload_candidate(
     full_name: str = Form(...),
     dob: date = Form(...),
@@ -59,7 +59,7 @@ async def upload_candidate(
 
 
 # List Candidates
-@router.get("/", response_model=list[CandidateResponse],status_code=200)
+@router.get("", response_model=list[CandidateResponse],status_code=200)
 def list_candidates(
     skill: Optional[str] = None,
     min_experience: Optional[int] = None,

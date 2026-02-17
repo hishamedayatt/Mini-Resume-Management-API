@@ -41,7 +41,7 @@ Returns the API health status.
 
 ### Upload Candidate
 ```
-POST /candidates/
+POST /candidates
 ```
 Upload a new candidate with resume file.
 
@@ -59,7 +59,7 @@ Upload a new candidate with resume file.
 
 ### List Candidates
 ```
-GET /candidates/
+GET /candidates
 ```
 Retrieve all candidates with optional filters.
 
