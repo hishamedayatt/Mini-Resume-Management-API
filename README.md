@@ -105,6 +105,6 @@ mini_resume_management/
 
 - This application uses in-memory storage. Data will be lost when the server restarts.
 - Resume files are validated but not actually stored in this implementation.
-- For production use, consider implementing persistent storage and actual file storage.
+
 
 

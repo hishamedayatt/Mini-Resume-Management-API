@@ -1,7 +1,7 @@
 [project]
 name = "mini-resume-management"
 version = "0.1.0"
-description = "Add your description here"
+description = "A FastAPI-based REST API for managing candidate resumes with CRUD operations and filtering capabilities"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
